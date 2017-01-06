@@ -9,7 +9,7 @@
 <body>
     <div id="wrapper">
       <header>
-      	<div class="logo"><img class="logo_image" src="images/logo.png"></div>
+      	<div class="logo"><img class="logo_image" alt="Logo" src="images/logo.png"></div>
 	    <nav>
 		    <ul>
 			    <li><a rel="external" href="#">HOME</a></li>
@@ -20,36 +20,36 @@
         <div class="offers">
            	<div class="offer">
            		<div tooltip="info info info info info info info infoinfo info info infoinfo info info infoinfo info info infoinfo info info info">
-        			<img class="offer_image" src="images/shoe.jpg">
+        			<img class="offer_image" alt="Offer" src="images/shoe.jpg">
         		</div>
         		<div class="price">100€</div>
         	</div>
         	<div class="offer">
-        		<img class="offer_image" src="images/shoe.jpg">
+        		<img class="offer_image" alt="Offer" src="images/shoe.jpg">
         		<div class="price">100€</div>
         	</div>
         	<div class="offer">
-        		<img class="offer_image" src="images/shoe.jpg">
+        		<img class="offer_image" alt="Offer" src="images/shoe.jpg">
         		<div class="price">100€</div>
         	</div>
         	<div class="offer">
-        		<img class="offer_image" src="images/shoe.jpg">
+        		<img class="offer_image" alt="Offer" src="images/shoe.jpg">
         		<div class="price">100€</div>
         	</div>
         	<div class="offer">
-        		<img class="offer_image" src="images/shoe.jpg">
+        		<img class="offer_image" alt="Offer" src="images/shoe.jpg">
         		<div class="price">100€</div>
         	</div>
         	<div class="offer">
-        		<img class="offer_image" src="images/shoe.jpg">
+        		<img class="offer_image" alt="Offer" src="images/shoe.jpg">
         		<div class="price">100€</div>
         	</div>
         	<div class="offer">
-        		<img class="offer_image" src="images/shoe.jpg">
+        		<img class="offer_image" alt="Offer" src="images/shoe.jpg">
         		<div class="price">100€</div>
         	</div>
         	<div class="offer">
-        		<img class="offer_image" src="images/shoe.jpg">
+        		<img class="offer_image" alt="Offer" src="images/shoe.jpg">
         		<div class="price">100€</div>
         	</div>
         </div>    
