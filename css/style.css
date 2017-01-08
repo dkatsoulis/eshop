@@ -7,13 +7,53 @@
 	width: 100%;
 }
 
-.logo_image {
+.logo-image {
 	margin: auto;
 	display: block;
 }
 
+.top-bar{
+	width: 95%;
+	padding-right: 5%;
+	position:absolute;
+}
+
+.user {
+	float: right;
+}
+
+.user .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 92%;
+    margin-left: -60px;
+}
+
+.user:hover .tooltiptext {
+    visibility: visible;
+}
+
+.login {
+  color: white;
+  text-decoration: none;
+}
+
+.cart {
+	float: right;
+}
+
 html { 
-  background: url(../images/shoe_background.jpg) no-repeat center center fixed; 
+  background: url(../images/shoe-background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -97,7 +137,7 @@ html[xmlns] .clearfix {
     cursor: pointer;
 }
 
-.offer_image {
+.offer-image {
 	width: 100%;
 	overflow: hidden;
 }
