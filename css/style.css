@@ -39,7 +39,12 @@
     margin-left: -60px;
 }
 
+.user:hover {
+	cursor: pointer;
+}
+
 .user:hover .tooltiptext {
+	cursor: pointer;
     visibility: visible;
 }
 
