@@ -14,21 +14,20 @@
 	<div id="wrapper">
 		<header>
 			<?php
-				include ("app/view/main/header.php");
-			?>
-			<?php
-				include ("app/view/main/menu.php");
-			?>
-			<?php
-				include ("app/view/main/forms.php");
-			?>
-			<?php
-				include ("app/view/main/offers.php");
+			session_start();
+			include ("app/view/main/header.php");
+			include ("app/view/main/menu.php");
+			include ("app/view/main/forms.php");
+			include ("app/view/main/offers.php");
+			if ($_SESSION["hasSignedup"] == 1) {
+				include ("app/view/main/modal.php");
+				$_SESSION["hasSignedup"] = 0;
+			}
 			?>
 		</header>
 		<footer>
 			<?php
-				include ("app/view/main/footer.php");
+			include ("app/view/main/footer.php");
 			?>
 		</footer>
 	</div>
