@@ -1,6 +1,6 @@
 <div id="cd-signup">
 	<!-- sign up form -->
-	<form class="cd-form" action="app/model/register-user.php" method="post">
+	<form class="cd-form" action="app/controller/get-signup-data.php" method="post">
 		<p class="fieldset">
 			<label class="image-replace cd-username" for="signup-username">Username</label>
 			<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username" name="username">

@@ -82,7 +82,6 @@ jQuery(document).ready(function($) {
 	}
 
 	//IE9 placeholder fallback
-	//credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.html
 	if (!Modernizr.input.placeholder) {
 		$('[placeholder]').focus(function() {
 			var input = $(this);
@@ -106,7 +105,7 @@ jQuery(document).ready(function($) {
 	}
 });
 
-//credits http://css-tricks.com/snippets/jquery/move-cursor-to-end-of-textarea-or-input/
+//move-cursor-to-end-of-textarea-or-input/
 jQuery.fn.putCursorAtEnd = function() {
 	return this.each(function() {
 		// If this function exists...
