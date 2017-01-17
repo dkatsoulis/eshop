@@ -15,8 +15,8 @@
 
 		<p class="fieldset">
 			<label class="image-replace cd-password" for="signup-password">Password</label>
-			<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password" name="password">
-			<a href="#0" class="hide-password">Hide</a>
+			<input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password" name="password">
+			<a href="#0" class="hide-password">Show</a>
 			<span class="cd-error-message">Error message here!</span>
 		</p>
 
