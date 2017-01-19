@@ -1,2 +1,5 @@
 RewriteEngine On # Turn on the rewriting engine
 RewriteRule ^admin?$ app/view/backend/login.php [NC,L] # Handle requests for "admin"
+RewriteRule ^add-product?$ app/view/backend/add-product.php [NC,L] # Handle requests for "add-product"
+RewriteRule ^edit-product?$ app/view/backend/add-product.php [NC,L] # Handle requests for "edit-product"
+RewriteRule ^products?$ app/view/backend/product-grid.php [NC,L] # Handle requests for "products"

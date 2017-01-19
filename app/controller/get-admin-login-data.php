@@ -11,16 +11,14 @@ if ($login -> loginAdmin($formUsername, $formPassword) == TRUE) {
 		$_SESSION["userExists"] = 0;
 		$_SESSION["modalMessage"] = 'Wrong username or password.';
 		$host = $_SERVER['HTTP_HOST'];
-		echo $_SESSION["userExists"];
-		echo '  ';
-		echo $_SESSION["modalMessage"];
 		header("Location: http://$host/admin");
 		exit ;
 	} else {
 		$_SESSION["username"] = $login -> result['username'];
 		$_SESSION["userid"] = $login -> result['id'];
+		$_SESSION["isAdmin"] = 1;
 		$host = $_SERVER['HTTP_HOST'];
-		header("Location: http://$host/app/view/backend/add-product.php");
+		header("Location: http://$host/app/controller/get-product-list.php");
 		exit ;
 	}
 }

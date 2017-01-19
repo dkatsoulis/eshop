@@ -20,6 +20,10 @@
 	</form>
 	<?php
 	session_start();
+	if(isset($_SESSION["isAdmin"]) && $_SESSION["isAdmin"] == 1) {
+		$host = $_SERVER['HTTP_HOST'];
+		header("Location: http://$host/app/controller/get-product-list.php");
+	}
 	if (isset($_SESSION["userExists"]) && $_SESSION["userExists"] == 0) {
 		include ("../main/modal.php");
 		unset($_SESSION["userExists"]);

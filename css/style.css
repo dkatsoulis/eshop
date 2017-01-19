@@ -134,11 +134,13 @@ html[xmlns] .clearfix {
 	padding: 2%;
 	margin: 1%;
 	width: 19%;
+	height: 290px;
 	float: left;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
 	cursor: pointer;
+	position:relative;
 }
 
 .offer-image {
@@ -155,7 +157,7 @@ html[xmlns] .clearfix {
 [tooltip]:hover:before {
 	opacity: 0.8;
 	background-color: yellow;
-	width: 15%;
+	width: 83%;
 }
 
 .price {
@@ -165,6 +167,8 @@ html[xmlns] .clearfix {
 	font-weight: bold;
 	font-size: 300%;
 	text-shadow: 2px 2px 0 #000;
+	position:absolute;
+	bottom: 20px;
 }
 
 .footer {

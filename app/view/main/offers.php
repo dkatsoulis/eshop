@@ -1,52 +1,25 @@
+<?php
+if(isset($_SESSION["mainProducts"]) == false || isset($_SESSION["productsLoaded"]) == false) {
+	$host = $_SERVER['HTTP_HOST'];
+	header("Location: http://$host/app/controller/get-main-products.php"); 
+}
+
+$mainProducts = $_SESSION["mainProducts"];
+?>
 <div class="offers">
-	<div class="offer">
-		<div tooltip="info info info info info info info infoinfo info info infoinfo info info infoinfo info info infoinfo info info info">
-			<img class="offer-image" alt="Offer" src="images/shoe.jpg">
+	<?php
+	foreach ($mainProducts as $product){
+	?>
+		<div class="offer">
+			<div tooltip="<?php echo $product['description']; ?>">
+				<img class="offer-image" alt="Offer" src="images/products/<?php echo $product['image']; ?>">
+			</div>
+			<div class="price">
+				<?php echo $product['price']; ?>€
+			</div>
 		</div>
-		<div class="price">
-			100€
-		</div>
-	</div>
-	<div class="offer">
-		<img class="offer-image" alt="Offer" src="images/shoe.jpg">
-		<div class="price">
-			100€
-		</div>
-	</div>
-	<div class="offer">
-		<img class="offer-image" alt="Offer" src="images/shoe.jpg">
-		<div class="price">
-			100€
-		</div>
-	</div>
-	<div class="offer">
-		<img class="offer-image" alt="Offer" src="images/shoe.jpg">
-		<div class="price">
-			100€
-		</div>
-	</div>
-	<div class="offer">
-		<img class="offer-image" alt="Offer" src="images/shoe.jpg">
-		<div class="price">
-			100€
-		</div>
-	</div>
-	<div class="offer">
-		<img class="offer-image" alt="Offer" src="images/shoe.jpg">
-		<div class="price">
-			100€
-		</div>
-	</div>
-	<div class="offer">
-		<img class="offer-image" alt="Offer" src="images/shoe.jpg">
-		<div class="price">
-			100€
-		</div>
-	</div>
-	<div class="offer">
-		<img class="offer-image" alt="Offer" src="images/shoe.jpg">
-		<div class="price">
-			100€
-		</div>
-	</div>
+	<?php 
+	}
+	unset($_SESSION["productsLoaded"]);
+	?>
 </div>

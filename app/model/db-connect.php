@@ -43,5 +43,16 @@ class dbConnect {
 			return FALSE;
 		}
 	}
+	
+	public function getProduct($sql) {
+		if ($result = mysqli_query($this -> connect, ($sql))) {
+			$this -> connect -> close();
+			$this -> result = $result;
+			return TRUE;
+		} else {
+			$this -> error = "Error: " . $sql . "<br>" . $this -> connect -> error;
+			return FALSE;
+		}
+	}
 }
 ?>
