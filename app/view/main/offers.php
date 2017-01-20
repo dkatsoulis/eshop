@@ -1,25 +1,25 @@
 <?php
-if(isset($_SESSION["mainProducts"]) == false || isset($_SESSION["productsLoaded"]) == false) {
-	$host = $_SERVER['HTTP_HOST'];
-	header("Location: http://$host/app/controller/get-main-products.php"); 
+if (isset($_SESSION["mainProducts"])){
+	$mainProducts = $_SESSION["mainProducts"];
+	?>
+	<div class="offers">
+		<?php
+		foreach ($mainProducts as $product){
+		?>
+			<div class="offer">
+				<div class="offer-name"><?php echo $product['name']; ?></div>	
+				<div tooltip="<?php echo $product['description']; ?>">			
+					<img class="offer-image" alt="Offer" src="images/products/<?php echo $product['image']; ?>">
+				</div>
+				<div class="price">
+					<?php echo($product['price']) - ((float)$product['price'] / 100 * $product['offer']); ?>€
+				</div>
+				<a href="app/controller/get-order-data.php?id=<?php echo $product['id']; ?>"><div id="<?php echo $product['id']; ?>" class="buy">BUY</div></a>
+			</div>
+		<?php
+		}
+		?>
+	</div>
+<?php
 }
-
-$mainProducts = $_SESSION["mainProducts"];
 ?>
-<div class="offers">
-	<?php
-	foreach ($mainProducts as $product){
-	?>
-		<div class="offer">
-			<div tooltip="<?php echo $product['description']; ?>">
-				<img class="offer-image" alt="Offer" src="images/products/<?php echo $product['image']; ?>">
-			</div>
-			<div class="price">
-				<?php echo $product['price']; ?>€
-			</div>
-		</div>
-	<?php 
-	}
-	unset($_SESSION["productsLoaded"]);
-	?>
-</div>

@@ -25,7 +25,6 @@ class dbConnect {
 
 	public function save($sql) {
 		if ($this -> connect -> query($sql) === TRUE) {
-			$this -> connect -> close();
 			return TRUE;
 		} else {
 			$this -> error = "Error: " . $sql . "<br>" . $this -> connect -> error;
@@ -35,7 +34,6 @@ class dbConnect {
 
 	public function getUser($sql) {
 		if ($result = mysqli_query($this -> connect, ($sql))) {
-			$this -> connect -> close();
 			$this -> result = $result;
 			return TRUE;
 		} else {
@@ -46,7 +44,16 @@ class dbConnect {
 	
 	public function getProduct($sql) {
 		if ($result = mysqli_query($this -> connect, ($sql))) {
-			$this -> connect -> close();
+			$this -> result = $result;
+			return TRUE;
+		} else {
+			$this -> error = "Error: " . $sql . "<br>" . $this -> connect -> error;
+			return FALSE;
+		}
+	}
+	
+	public function getOrder($sql) {
+		if ($result = mysqli_query($this -> connect, ($sql))) {
 			$this -> result = $result;
 			return TRUE;
 		} else {

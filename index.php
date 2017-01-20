@@ -7,7 +7,10 @@
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/modal.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.dataTables.min.css">
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/datatable.js"></script>
 	<script src="js/index.js"></script>
 </head>
 

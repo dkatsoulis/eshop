@@ -56,7 +56,7 @@ xsigin/signup popup
 }
 .cd-user-modal-container .cd-switcher::after {
   clear: both;
-  content: "";
+  content: '';
   display: table;
 }
 .cd-user-modal-container .cd-switcher li {
@@ -126,7 +126,7 @@ xsigin/signup popup
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  color: transparent;
+  color: white;
   text-shadow: none;
   background-repeat: no-repeat;
   background-position: 50% 0;

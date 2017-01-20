@@ -16,9 +16,13 @@ class product {
 			echo $this -> connect -> error;
 		}
 	}
-	
+
 	public function updateProduct($Id, $Name, $Image, $Description, $Price, $Offer, $Main) {
-		$sql = "UPDATE products SET name = '$Name', image = '$Image', description = '$Description', price = '$Price', offer = '$Offer', main = $Main WHERE id = $Id";
+		if (isset($Image) && $Image != '') {
+			$sql = "UPDATE products SET name = '$Name', image = '$Image', description = '$Description', price = '$Price', offer = '$Offer', main = $Main WHERE id = $Id";
+		} else {
+			$sql = "UPDATE products SET name = '$Name', description = '$Description', price = '$Price', offer = '$Offer', main = $Main WHERE id = $Id";
+		}
 
 		if ($this -> connect -> save($sql) == TRUE) {
 			return TRUE;
@@ -51,7 +55,7 @@ class product {
 			echo $this -> connect -> error;
 		}
 	}
-	
+
 	public function getMainProducts() {
 		$sql = "Select * FROM products WHERE main = 1";
 

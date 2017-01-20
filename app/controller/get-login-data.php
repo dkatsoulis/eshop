@@ -11,13 +11,13 @@ if ($login -> loginUser($formPassword, $formEmail) == TRUE) {
 		$_SESSION["userExists"] = 0;
 		$_SESSION["modalMessage"] = 'User does not exist. Please sign up.';
 		$host = $_SERVER['HTTP_HOST'];
-		header("Location: http://$host");
+		header("Location: http://$host/app/controller/get-main-products.php");
 		exit ;
 	} else {
 		$_SESSION["username"] = $login -> result['username'];
 		$_SESSION["userid"] = $login -> result['id'];
 		$host = $_SERVER['HTTP_HOST'];
-		header("Location: http://$host");
+		header("Location: http://$host/app/controller/get-main-products.php");
 		exit ;
 	}
 }

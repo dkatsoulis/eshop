@@ -42,7 +42,7 @@
 				session_start();
 				if($_SESSION["isAdmin"] == 0) {
 					$host = $_SERVER['HTTP_HOST'];
-					header("Location: http://$host/");
+					header("Location: http://$host/app/controller/get-main-products.php");
 				}
 				$productList = $_SESSION["Products"];
 				foreach ($productList as $product){

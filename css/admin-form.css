@@ -68,9 +68,18 @@ textarea {
 	float: none;
 }
 
+input.image-file {
+	display:none;
+}
+
+#delete-image {
+	text-decoration: none;
+	color:black;
+}
+
 #submit {
 	float: none;
-	background-color: grey;
+	background-color:#809191;
 	width:100%;
 	height:38px;
 	border:none;

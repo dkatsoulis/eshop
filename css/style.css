@@ -134,13 +134,12 @@ html[xmlns] .clearfix {
 	padding: 2%;
 	margin: 1%;
 	width: 19%;
-	height: 290px;
+	height: 310px;
 	float: left;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	cursor: pointer;
-	position:relative;
+	position: relative;
 }
 
 .offer-image {
@@ -157,7 +156,16 @@ html[xmlns] .clearfix {
 [tooltip]:hover:before {
 	opacity: 0.8;
 	background-color: yellow;
+	color:black;
 	width: 83%;
+}
+
+.offer-name {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+	padding-bottom:2px;
 }
 
 .price {
@@ -167,8 +175,28 @@ html[xmlns] .clearfix {
 	font-weight: bold;
 	font-size: 300%;
 	text-shadow: 2px 2px 0 #000;
-	position:absolute;
+	position: absolute;
 	bottom: 20px;
+	width: 80%;
+	float: left;
+}
+
+.buy {
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "Tahoma";
+	text-decoration: none;
+	text-shadow: none;
+	-webkit-text-stroke: none;
+	color:#E74C3C;
+	margin-left: 60%;
+	float: right;
+	position: absolute;
+	bottom: 20px;
+	cursor: pointer;
+	background-color:#D2D8D8;
+	border-radius: 10px;
+	padding:3%;
 }
 
 .footer {

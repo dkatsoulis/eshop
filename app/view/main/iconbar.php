@@ -1,5 +1,5 @@
 <div class="top-bar">
-	<div class="cart"><img alt="Cart" src="images/cart.png">
+	<div class="cart"><a class="login" rel="external" href="app/controller/navigation.php?page=cart"><img alt="Cart" src="images/cart.png"></a>
 	</div>
 	<div class="user">
 		<img alt="User" src="images/user.png">

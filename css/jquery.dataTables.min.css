@@ -382,3 +382,20 @@ input#gobutton:hover, input#gobutton:focus {
 	text-decoration: none;
 	color:black;
 }
+
+.order-product-list {
+	background-color:rgba(153, 204, 0, 0.7);
+	padding-top: 50px;
+	width:90%;
+	margin: auto;
+}
+
+.total {
+	height:25px;
+	background-color:black;
+	color:white;
+	text-align:right;
+	width:95%;
+	padding-top:10px;
+	padding-right:5%;
+}
