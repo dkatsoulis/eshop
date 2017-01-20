@@ -13,6 +13,12 @@ if (isset($_SESSION["page"]) == false || $_SESSION["page"] == 'main') {
 	include ("app/view/main/offers.php");
 } elseif ($_SESSION["page"] == 'cart') {
 	include ("app/view/main/forms/order.php");
+} elseif ($_SESSION["page"] == 'orders') {
+	include ("app/view/main/forms/order-list.php");
+} elseif ($_SESSION["page"] == 'aboutus') {
+	include ("app/view/main/aboutus.php");
+} elseif ($_SESSION["page"] == 'contact') {
+	include ("app/view/main/contact.php");
 }
 
 if (isset($_SESSION["hasSignedup"]) && $_SESSION["hasSignedup"] == 1) {

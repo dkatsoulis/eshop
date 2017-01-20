@@ -11,7 +11,20 @@ if ($page == 'cart') {
 	$host = $_SERVER['HTTP_HOST'];
 	header("Location: http://$host/app/controller/get-order-data.php");
 	exit ;
-} else {
+} elseif ($page == 'orders') {
+	$host = $_SERVER['HTTP_HOST'];
+	header("Location: http://$host/app/controller/get-order-list.php");
+	exit ;
+} elseif ($page == 'aboutus') {
+	$host = $_SERVER['HTTP_HOST'];
+	header("Location: http://$host/app/controller/get-main-products.php");
+	exit ;
+} elseif ($page == 'contact') {
+	$host = $_SERVER['HTTP_HOST'];
+	header("Location: http://$host/app/controller/get-main-products.php");
+	exit ;
+}
+else {
 	$host = $_SERVER['HTTP_HOST'];
 	header("Location: http://$host/app/controller/get-main-products.php");
 	exit ;

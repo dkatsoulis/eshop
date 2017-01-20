@@ -14,6 +14,11 @@ if (isset($_GET['id'])) {
 			}
 		}
 		if ($order -> addOrderProduct($_SESSION["orderId"], $productId) == TRUE) {
+			if ($order -> getOrderProductList($_SESSION["orderId"]) == TRUE) {
+				$_SESSION["orderProducts"] = $order -> result;
+			}
+
+			$_SESSION["page"] = 'cart';
 			$host = $_SERVER['HTTP_HOST'];
 			header("Location: http://$host/app/controller/get-main-products.php");
 			exit ;
@@ -28,6 +33,7 @@ if (isset($_GET['id'])) {
 } elseif (isset($_SESSION["orderId"])) {
 	if ($order -> getOrderProductList($_SESSION["orderId"]) == TRUE) {
 		$_SESSION["orderProducts"] = $order -> result;
+		$_SESSION["page"] = 'cart';
 		$host = $_SERVER['HTTP_HOST'];
 		header("Location: http://$host/app/controller/get-main-products.php");
 		exit ;
@@ -36,6 +42,10 @@ if (isset($_GET['id'])) {
 	if ($order -> selectOpenOrder($_SESSION["userid"]) == TRUE) {
 		$_SESSION["orderId"] = $order -> result['id'];
 	}
+	if ($order -> getOrderProductList($_SESSION["orderId"]) == TRUE) {
+		$_SESSION["orderProducts"] = $order -> result;
+	}
+	$_SESSION["page"] = 'cart';
 	$host = $_SERVER['HTTP_HOST'];
 	header("Location: http://$host/app/controller/get-main-products.php");
 	exit ;

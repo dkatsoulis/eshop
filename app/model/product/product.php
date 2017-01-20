@@ -42,9 +42,19 @@ class product {
 			echo $this -> connect -> error;
 		}
 	}
+	
+	public function deleteProduct($ProductId) {
+		$sql = "DELETE FROM products WHERE id = $ProductId";
+
+		if ($this -> connect -> save($sql) == TRUE) {
+			return TRUE;
+		} else {
+			echo $this -> connect -> error;
+		}
+	}
 
 	public function getProductList() {
-		$sql = "Select * FROM products";
+		$sql = "SELECT * FROM products";
 
 		if ($this -> connect -> getProduct($sql) == TRUE) {
 			while ($row = mysqli_fetch_assoc($this -> connect -> result)) {
@@ -57,7 +67,7 @@ class product {
 	}
 
 	public function getMainProducts() {
-		$sql = "Select * FROM products WHERE main = 1";
+		$sql = "SELECT * FROM products WHERE main = 1";
 
 		if ($this -> connect -> getProduct($sql) == TRUE) {
 			while ($row = mysqli_fetch_assoc($this -> connect -> result)) {

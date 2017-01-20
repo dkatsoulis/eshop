@@ -1,8 +1,8 @@
 <!doctype html>
 <head>
 	<meta charset="utf-8">
-	<title>Our First HTML5 Page</title>
-	<meta name="description" content="Welcome to my basic template.">
+	<title>Admin</title>
+	<meta name="description" content="Admin Area">
 	<link rel="stylesheet" href="../css/jquery.dataTables.min.css">
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/jquery.dataTables.min.js"></script>
@@ -59,7 +59,10 @@
 						echo "checked";
 					?>
 				></td>
-				<td><a href="app/controller/get-product-data.php?id=<?php echo $product['id']; ?>" class="edit-product">Edit</a></td>
+				<td>
+					<a href="app/controller/get-product-data.php?id=<?php echo $product['id']; ?>" class="grid-link">Edit</a>
+					<a href="app/controller/delete-product.php?id=<?php echo $product['id']; ?>" class="grid-link">Delete</a>
+				</td>
 			</tr>
 			<?php
 				}

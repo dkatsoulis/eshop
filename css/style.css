@@ -24,7 +24,7 @@
 
 .user .tooltiptext {
 	visibility: hidden;
-	width: 120px;
+	width: 150px;
 	background-color: black;
 	color: #fff;
 	text-align: center;
@@ -197,6 +197,14 @@ html[xmlns] .clearfix {
 	background-color:#D2D8D8;
 	border-radius: 10px;
 	padding:3%;
+}
+
+.about {
+	width:50%;
+	margin:auto;
+	padding:50px;
+	background-color:rgba(134,125,125,0.7);
+	height:500px;
 }
 
 .footer {

@@ -1,8 +1,8 @@
 <!doctype html>
 <head>
 	<meta charset="utf-8">
-	<title>Our First HTML5 Page</title>
-	<meta name="description" content="Welcome to my basic template.">
+	<title>Admin</title>
+	<meta name="description" content="Admin Area">
 	<link rel="stylesheet" href="../css/login.css">
 	<link rel="stylesheet" href="../css/modal.css">
 	<script src="../js/jquery.min.js"></script>

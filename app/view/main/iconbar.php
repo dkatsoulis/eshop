@@ -8,6 +8,7 @@
 		if(isset($_SESSION["username"])){
 			echo $_SESSION["username"];
 		?>
+			<a class="login" rel="external" href="app/controller/navigation.php?page=orders"> Orders</a>
 			<a class="login" rel="external" href="app/controller/logout-user.php"> Logout</a></span>
 		<?php
 		}

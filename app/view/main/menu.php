@@ -4,10 +4,10 @@
 			<a rel="external" href="app/controller/navigation.php?page=main">HOME</a>
 		</li>
 		<li>
-			<a rel="external" href="#">ABOUT US</a>
+			<a rel="external" href="app/controller/navigation.php?page=aboutus">ABOUT US</a>
 		</li>
 		<li>
-			<a rel="external" href="#">CONTACT</a>
+			<a rel="external" href="app/controller/navigation.php?page=contact">CONTACT</a>
 		</li>
 	</ul>
 </nav>

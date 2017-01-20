@@ -1,8 +1,8 @@
 <!doctype html>
 <head>
 	<meta charset="utf-8">
-	<title>Our First HTML5 Page</title>
-	<meta name="description" content="Welcome to my basic template.">
+	<title>shoe SHOP</title>
+	<meta name="description" content="Welcome to shoe SHOP">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/modal.css">

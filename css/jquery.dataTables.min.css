@@ -356,7 +356,7 @@ table.dataTable, table.dataTable th, table.dataTable td {
 		margin-top: 0.5em
 	}
 }
-input#gobutton {
+input#gobutton, #orderbutton {
 	cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
 	margin: 10px;
 	padding: 5px 25px; /*add some padding to the inside of the button*/
@@ -370,7 +370,7 @@ input#gobutton {
 	color: #f3f3f3;
 	font-size: 15px;
 }
-input#gobutton:hover, input#gobutton:focus {
+input#gobutton:hover, input#gobutton:focus, input#orderbutton:hover, input#orderbutton:hover {
 	background-color: #399630; /*make the background a little darker*/
 	/*reduce the drop shadow size to give a pushed button effect*/
 	-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
@@ -378,7 +378,7 @@ input#gobutton:hover, input#gobutton:focus {
 	box-shadow: 0 0 1px rgba(0,0,0, .75);
 }
 
-.edit-product {
+.grid-link {
 	text-decoration: none;
 	color:black;
 }
@@ -388,6 +388,17 @@ input#gobutton:hover, input#gobutton:focus {
 	padding-top: 50px;
 	width:90%;
 	margin: auto;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.order-list {
+	background-color:rgba(153, 204, 0, 0.7);
+	padding-top: 50px;
+	width:40%;
+	margin: auto;
+	padding-left: 2%;
+	padding-right: 2%;
 }
 
 .total {
@@ -395,7 +406,8 @@ input#gobutton:hover, input#gobutton:focus {
 	background-color:black;
 	color:white;
 	text-align:right;
-	width:95%;
+	font-weight:bold;
+	width:97%;
 	padding-top:10px;
-	padding-right:5%;
+	padding-right:3%;
 }
