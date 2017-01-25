@@ -11,6 +11,9 @@
 		</thead>
 		<tbody>
 			<?php
+				Kint::enabled(false);
+				ddd($_SESSION["orderProducts"]);
+				Kint::trace();		
 				$total = 0.00;
 				$price = 0.00;
 				if (isset($_SESSION["orderProducts"])){

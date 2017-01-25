@@ -19,6 +19,9 @@
 			<?php
 					}
 				}
+				Kint::enabled(false);
+				ddd($orderList);
+				Kint::trace();			
 			?>
 		</tbody>
 	</table>

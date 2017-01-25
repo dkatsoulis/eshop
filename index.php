@@ -18,6 +18,7 @@
 	<div id="wrapper">
 		<header>
 			<?php
+			include ("kint-master/Kint.class.php");
 			include ("app/view/main/content.php");
 			?>
 		</header>
