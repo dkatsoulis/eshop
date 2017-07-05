@@ -64,19 +64,6 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `orders`
---
-
-INSERT INTO `orders` (`id`, `userId`, `price`, `status`) VALUES
-(21, 2, '325.10', b'0'),
-(23, 4, '0.00', b'1'),
-(24, 2, '233.10', b'0'),
-(25, 2, '273.00', b'0'),
-(26, 2, '0.00', b'1');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `products`
 --
 
@@ -121,9 +108,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `isAdmin`) VALUES
-(1, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'admin@eshop.com', 1),
-(2, 'azard', 'b8cca66730ce9a9d9965d663359e115d238bc118', 'jimkatsoulis@hotmail.com', 0),
-(4, 'darkangel', 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3', 'darkangel.eliza@gmail.com', 0);
+(1, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'admin@eshop.com', 1);
 
 --
 -- Indexes for dumped tables
